@@ -1,7 +1,8 @@
-# Assignment1 - Practice Designing Models (Template)
+# Assignment1 - Practice Designing Models
 (remove: **text between brackets to be removed**)
 
-> * Participant name: (your name)
+> * Participant name: Paige Paulsen
+> * Jan.18.2018
 > * Project Title: (Title of the problem you are looking and modeling)
 
 ## General Introduction
