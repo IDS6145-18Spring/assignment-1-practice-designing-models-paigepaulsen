@@ -10,7 +10,7 @@ A **smart city** is an urban area that uses different types of electronic data c
 
 ![By Rama - Own work, CC BY-SA 2.0 fr, https://commons.wikimedia.org/w/index.php?curid=874992](images/solarpanel-07.jpg)
 
-One problem which could be solved in a smart city is optimizing solar panels. Solar panels are most efficient when using a solar tracker, which orients the panels towards the sun. This problem can be solved using a simple simulation in Python. 
+One problem which could be solved in a smart city is optimizing solar panel orientation. Solar panels are most efficient when using a solar tracker, which orients the panels towards the sun. This problem can be modeled using a simple simulation in Python. 
 
 By maximizing the efficiency of solar panels, solar energy can make up a greater portion of the energy requirements of the city of Orlando, reducing greenhouse gas emissions and improving air quality. This program will simulate a tip-tilt dual axis solar tracker, allowing maximization based on time of day and time of year. By including functionality to retract the panels during periods of high wind, we can also reduce the likelihood of damage. In addition, by signalling the user when a battery is full, we can improve the implementation of home solar for lay users.
 
