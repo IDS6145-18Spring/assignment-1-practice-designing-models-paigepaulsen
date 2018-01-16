@@ -1,19 +1,20 @@
 # Assignment1 - Practice Designing Models
-(remove: **text between brackets to be removed**)
 
 > * Participant name: Paige Paulsen
 > * Jan.18.2018
 > * Project Title: (Title of the problem you are looking and modeling)
 
-## General Introduction
+## General Introduction: Solar Tracking
 
 A **smart city** is an urban area that uses different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently.
 
-![Image of Smart City](images/smartcity.png)
+![By Rama - Own work, CC BY-SA 2.0 fr, https://commons.wikimedia.org/w/index.php?curid=874992](images/solarpanel-07.jpg)
 
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
-(remove: Add real-world examples, if any)
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+One problem which could be solved in a smart city is optimizing solar panels. Solar panels are most efficient when using a solar tracker, which orients the panels towards the sun. This problem can be solved using a simple simulation in Python. 
+
+By maximizing the efficiency of solar panels, solar energy can make up a greater portion of the energy requirements of the city of Orlando, reducing greenhouse gas emissions and improving air quality. This program will simulate a tip-tilt dual axis solar tracker, allowing maximization based on time of day and time of year. By including functionality to retract the panels during periods of high wind, we can also reduce the likelihood of damage. In addition, by signalling the user when a battery is full, we can improve the implementation of home solar for lay users.
+
+These types of dual axis solar trackers are used in smaller installations, where the same increase in output is not possible through adding additional solar panels. However, they are not suitable for rooftop installations due to the increased mechanical requirements and additional wind speeds. This simulation will be useful for deciding if a dual axis solar tracker is an appropriate choice for a given location. (Source: https://en.wikipedia.org/wiki/Solar_tracker)
 
 ## Requirements (Experimental Design)
 
