@@ -2,7 +2,7 @@
 
 > * Participant name: Paige Paulsen
 > * Jan.18.2018
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Project Title: Solar Tracking For Optimizing Solar Panel Efficiency
 
 ## General Introduction: Solar Tracking
 
@@ -20,7 +20,7 @@ These types of active dual axis solar trackers are used in smaller installations
 
 To use an active dual axis solar tracker we will need several types of inputs. We will need to estimate the rate at which the battery fills while exposed to sunlight. We will need to collect wind speed data from a local sensor so that the panels retract when the wind speed reaches dangerous levels. We will need to account for the North/South angle of the sun at different times of year. We will need to account for the East/West movement of the sun throughout the day, modified by the time of year.
 
-## Smart City (My Problem) Model
+## Smart City Solar Panel Tracking Model
 
 (remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
 (remove: Look at the [**Object Diagram**](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
