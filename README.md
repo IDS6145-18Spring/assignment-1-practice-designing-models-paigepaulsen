@@ -9,12 +9,12 @@
 A **smart city** is an urban area that uses different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently.
 
 ![By Rama - Own work, CC BY-SA 2.0 fr, https://commons.wikimedia.org/w/index.php?curid=874992](images/solarpanel-07.jpg)
-
+By Rama (Own work) [CeCILL (http://www.cecill.info/licences/Licence_CeCILL_V2-en.html) or CC BY-SA 2.0 fr (https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en)], via Wikimedia Commons
 
 
 ## Requirements (Experimental Design)
 
-One problem which could be solved in a smart city is optimizing solar panel orientation. Solar panels are most efficient when using a solar tracker, which orients the panels towards the sun. This problem can be modeled using a simple simulation in Python. 
+Solar panels are most efficient when using a solar tracker, which orients the panels towards the sun. This problem can be modeled using a simple simulation in Python. 
 
 By maximizing the efficiency of solar panels, solar energy can make up a greater portion of the energy requirements of the city of Orlando, reducing greenhouse gas emissions and improving air quality. This program will simulate a tip-tilt dual axis solar tracker, allowing maximization based on time of day and time of year. By including functionality to retract the panels during periods of high wind, we can also reduce the likelihood of damage. In addition, by signalling the user when a battery is full, we can improve the implementation of home solar for lay users.
 
@@ -25,7 +25,7 @@ To use an active dual axis solar tracker we will need several types of inputs. W
 ## Smart City Solar Panel Tracking Model
 
 (remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
-(remove: Look at the [**Object Diagram**](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
+
 
 * [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components
 * [**Class Diagram**](model/class_diagram.md) - provides details of (what are you providing details of)
@@ -34,7 +34,7 @@ To use an active dual axis solar tracker we will need several types of inputs. W
 
 ## Smart City (My Problem) Simulation
 
-(remove: for part 3 add two to three sentences here and link the [**(your own name)**](model/README.md) file in the analysis folder - which describe how you would simulate this - type of simulation, rough details -inputs, outputs - how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
+The goal of this simulation is to demonstrate how a solar panel can charge a battery, given the changing position of the sun throughout the year, the possibility of cloud cover, and the potential for dangerous high winds. The [**summary**](model/README.md) document describes the goals of the simulation.
 
 
 ## Smart City (My Problem) Model
