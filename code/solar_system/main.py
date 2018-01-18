@@ -3,13 +3,7 @@ from schedule import schedule
 from sun import sun
 from wind import wind
 from battery import battery
-from container import container
-from gardenmixsoil import gardenmixsoil
-from water import water
-
-containers = []
-thewater = water(1000)
-
+from panels import panels
 
 def WaitForKeyPress(L):
     ''' Wait for a key press on the console and return it. '''
@@ -38,27 +32,21 @@ def WaitForKeyPress(L):
     return result
 
 
-def CreatePlants(veggies):
-    ''' Create some random plants'''
-    for i in range(0,5):
-        veggies.append( stringbean("String Bean {}".format(str(i)  ),1,1,1,0.1,0.2,0.1) )
+def CreateBattery(battery):
+    ''' Create the empty battery'''
+    myBattery = Battery(0.0)
+    return myBattery.level
+    print (myBattery.level)
 
-    for i in range(0,4):
-        veggies.append( pepper("Pepper {}".format(str(i)  ),1,1,1,0.15,0.27,0.21) )
-
-    for i in range(0,2):
-        veggies.append( eggplant("Eggplant {}".format(str(i)  ),1,1,1,0.2,0.24,0.14) )
-
-    for i in range(0,5):
-        veggies.append( bokchoy("Bok Choy {}".format(str(i)  ),1,1,1,0.14,0.12,0.31) )
-
-
+def CreatePanel(panel):
+    ''' Create a panel'''
+    myPanel = Panel(a, s, w)
+    return myPanel
+    print (myPanel.a)
 
 def Simulate():
     L = []
     timestep = 0
-    global thewater
-    global containers
     _thread.start_new_thread(WaitForKeyPress, (L,))
 
     while 1:
@@ -68,36 +56,17 @@ def Simulate():
         print ("The timestep of the simulation is: {}".format(str(timestep)))
         timestep+=1
 
-        if timestep%100 ==0: 
-            for c in containers:
-                c.waterReserve += thewater.Rain()
-
-        for c in containers:
-            for v in c.vegtables:
-                v.Grow()
-                c.nutrientReserve -= 2 * v.Volume()
-                c.waterReserve -= 8 * v.Volume()
-                if c.nutrientReserve <= 0.0 or c.waterReserve <= 0.0:
-                    v.Die()
-                    print("YOU KILLED YOUR PLANTS!!!!!")
-                    return
-            print("Container: Water Reserve {}, Nutrient Level {}".format(str(c.waterReserve),str(c.nutrientReserve)))
-
-
+        for s in schedule:
+            s.whatmonth()
+            print(schedule.name)
+            return
 
 #Remember this method gets executed first since its our 'main'
 def main():
 
     #Make some vegtables
-    veggies = []
-    CreatePlants(veggies)
-
-    #Print the Veggies
-    for v in veggies:
-        print(v)
-
-    global containers
-    containers.append( container(30, 200, gardenmixsoil("MySoil", 10.0, 20.0, 100.0), veggies) )
+    battery = []
+    CreateBattery(battery)
 
     print("\nPress Any key to quit simulation...\n")
     Simulate()

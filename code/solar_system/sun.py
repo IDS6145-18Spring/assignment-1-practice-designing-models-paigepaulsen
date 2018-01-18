@@ -2,11 +2,9 @@ class sun:
     ''' A class for the sun '''
 
     def __init__(self, power):
+    	power = 1
 
-    def Shine():
-        power = 25
-         return 25.0
+        def Cloudy():
+         power = .5 #if it's cloudy, the power of the sun should decrease by half
+         return power
 
-    def Cloudy():
-         power = 10
-         return 10
