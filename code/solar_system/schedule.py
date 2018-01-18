@@ -1,30 +1,20 @@
-import math, time
-
-
 class schedule():
     '''this is the schedule'''
 
-    def __init__(self, oa, om, oe, name):
+    def __init__(self, oa, t, p, name):
         '''initializes the schedule'''
         self.oa = optimum_altitude #where N to S is the panel pointing?  
-        self.om = optmorning_time #what time should the panel be pointing at 60 degrees from the E horizon
-        self.oe = optevening_time #what time should the panel be pointing at 120 degrees from the E horizon 
+        self.t = time exposed
+        self.p =  #from the sun class, months are either cloudy or sunny  
         self.name = name
 
-        '''At different times of year, the panel needs to change the altitute it points at to better follow the sun'''
-        optimum_altitude = 45 #this should change but that's pretty hard
+    def whatmonth(self):
+        '''Every month is defined by a different time step'''
+        raise NotImplementedError("Please Implement the whatmonth method!")
+        #This containts a check to make sure subclasses implement this.
+        return None
 
-schedule(30, 7.00, 12.00, January) #this assumes that the sun only moves 1 degree north to south every month 
-schedule(31, 7.00, 12.00, February)
-schedule(32, 7.00, 12.00, March)
-schedule(33, 7.00, 12.00, April)
-schedule(34, 7.00, 12.00, May)
-schedule(35, 7.00, 12.00, June)
-schedule(35, 7.00, 12.00, July)
-schedule(34, 7.00, 12.00, August)
-schedule(33, 7.00, 12.00, September)
-schedule(32, 7.00, 12.00, October)
-schedule(31, 7.00, 12.00, November)
-schedule(30, 7.00, 12.00, December)
-    
-    def Inexorible():
+    def sunnyorno(self)
+        self.p 
+  
+    def Inexorible(): #I was imagining this as the time step, but maybe that should go in main?

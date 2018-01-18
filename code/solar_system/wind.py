@@ -7,7 +7,7 @@ class wind():
     def __init__(self, s):
         '''Intializes the wind'''
         self.s = speed  
-        self.s = 1# the speed of the wind is usually gentle
+        self.s = 1 # the speed of the wind is usually gentle
 
     def Blow(self):
         '''Sometimes the wind gets stronger and dangerous'''

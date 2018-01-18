@@ -14,21 +14,20 @@ By Rama (Own work) [CeCILL (http://www.cecill.info/licences/Licence_CeCILL_V2-en
 
 ## Requirements (Experimental Design)
 
-Solar panels are most efficient when using a solar tracker, which orients the panels towards the sun. This problem can be modeled using a simple simulation in Python. 
+Solar panels are most efficient when using a solar tracker of some kind, which orients the panels towards the sun. This problem can be modeled using a simple simulation in Python.
 
-By maximizing the efficiency of solar panels, solar energy can make up a greater portion of the energy requirements of the city of Orlando, reducing greenhouse gas emissions and improving air quality. This program will simulate a tip-tilt dual axis solar tracker, allowing maximization based on time of day and time of year. By including functionality to retract the panels during periods of high wind, we can also reduce the likelihood of damage. In addition, by signalling the user when a battery is full, we can improve the implementation of home solar for lay users.
+By maximizing the efficiency of solar panels, solar energy can make up a greater portion of the energy requirements of the city of Orlando, reducing greenhouse gas emissions and improving air quality. This program will simulate a tip-tilt dual axis solar tracker, allowing optimization of angle based on time of day and time of year. By including functionality to retract the panels during periods of high wind, we can also reduce the likelihood of damage. In addition, by signalling the user when a battery is full, we can improve the implementation of home solar for lay users.
 
-These types of active dual axis solar trackers are used in smaller installations, where the same increase in output is not possible through adding additional solar panels. However, they are not suitable for rooftop installations due to the increased mechanical requirements and additional wind speeds. This simulation will be useful for deciding if a dual axis solar tracker is an appropriate choice for a given location. (Source: https://en.wikipedia.org/wiki/Solar_tracker)
+These types of active dual axis solar trackers are used in smaller installations, where the same increase in output is not possible through adding additional solar panels. However, they are not suitable for rooftop installations due to the increased mechanical requirements and additional wind speeds. This simulation will be useful for deciding if a dual axis solar tracker is an appropriate choice for a given location by simulating the rate of battery charge. (Source: https://en.wikipedia.org/wiki/Solar_tracker)
 
 To use an active dual axis solar tracker we will need several types of inputs. We will need to estimate the rate at which the battery fills while exposed to sunlight. We will need to collect wind speed data from a local sensor so that the panels retract when the wind speed reaches dangerous levels. We will need to account for the North/South angle of the sun at different times of year. We will need to account for the East/West movement of the sun throughout the day, modified by the time of year.
 
 ## Smart City Solar Panel Tracking Model
 
-(remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
-
+This model shows how a solar panel works as a system - the inputs from weather conditions and sunlight, behavior modified by the schedule, and output as battery charging. 
 
 * [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components
-* [**Class Diagram**](model/class_diagram.md) - provides details of (what are you providing details of)
+* [**Class Diagram**](model/class_diagram.md) - provides details of how the solar tracker interacts with weather conditions and schedule to charge the battery
 * [**Behavior Diagram**](model/behavior_diagram.md) - provides details of (what are you providing details of)
 * [**Agent / User case** (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
 

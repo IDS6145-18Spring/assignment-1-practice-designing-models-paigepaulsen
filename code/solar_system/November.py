@@ -8,7 +8,7 @@ class November(schedule):
 
     def whatmonth():
         if timestep % 12 == 10 #timestep should be in main, like in POTS, right?
-            return January(schedule) # is this how I set this?
+            return November(schedule) # is this how I set this?
             print str(whatmonth(self))
         else 
         	return None	

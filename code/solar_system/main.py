@@ -1,8 +1,8 @@
 import math, time, _thread, sys, os
-from stringbean import stringbean
-from pepper import pepper
-from eggplant import eggplant
-from bokchoy import bokchoy
+from schedule import schedule
+from sun import sun
+from wind import wind
+from battery import battery
 from container import container
 from gardenmixsoil import gardenmixsoil
 from water import water
