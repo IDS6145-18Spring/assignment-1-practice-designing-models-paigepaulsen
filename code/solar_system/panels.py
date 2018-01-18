@@ -5,7 +5,7 @@ class panels():
     '''this is the solar panels'''
 
     def __init__(self, a, s, e, t):
-        '''Intializes the wind'''
+        '''Intializes the panels. Panels are pointing due south to optimize sun'''
         self.a = altitude #where N to S is the panel pointing?  
         self.s = sunny #Is it sunny out?
         self.t = time_exposed #how long is the panel exposed to sun
