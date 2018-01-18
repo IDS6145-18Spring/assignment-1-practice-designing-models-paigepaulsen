@@ -28,8 +28,7 @@ This model shows how a solar panel works as a system - the inputs from weather c
 
 * [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components
 * [**Class Diagram**](model/class_diagram.md) - provides details of how the solar tracker interacts with weather conditions and schedule to charge the battery
-* [**Behavior Diagram**](model/behavior_diagram.md) - provides details of (what are you providing details of)
-* [**Agent / User case** (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
+* [**Behavior Diagram**](model/behavior_diagram.md) - provides a state machine diagram
 
 ## Smart City (My Problem) Simulation
 
