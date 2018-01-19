@@ -36,9 +36,10 @@ The goal of this simulation is to demonstrate how a solar panel can charge a bat
 
 
 ## Smart City (My Problem) Model
-[**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
+[**Code template**](code/README.md) - Starting coding framework for the solar tracker 
+[**Direct link to code folder**](code/solar_system)
 
 ## **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model
-Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template.
+Here [**I provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model with two (2) diagrams.
 
 

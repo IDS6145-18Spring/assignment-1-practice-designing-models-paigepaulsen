@@ -23,4 +23,4 @@ class panels():
         print str(self.a)
 
     def ReadSun():
-        self.s = schedule.power #should ask schedule if sunny or not
+        self.s = sun.power #should ask schedule if sunny or not
